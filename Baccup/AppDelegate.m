@@ -126,6 +126,7 @@
         rootVC = [self rootViewControllerForPhoneWithModel:model];
     }
     
+    self.window.rootViewController = rootVC;
     
     //self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
