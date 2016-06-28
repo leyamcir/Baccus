@@ -5,22 +5,131 @@
 //  Created by Alicia Daza on 21/02/16.
 //  Copyright © 2016 Alicia Daza. All rights reserved.
 //
-
+/*
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@end
+#import "AGTWineModel.h"
+#import "AGTWineViewController.h"
+#import "AGTWebViewController.h"
+#import "AGTWineryModel.h"
+#import "AGTWineryTableViewController.h"
+*/
+#import "AppDelegate.h"
+#import "AGTWineryModel.h"
+#import "AGTWineryTableViewController.h"
+#import "AGTWineViewController.h"
 
 @implementation AppDelegate
+
+- (UIViewController *)rootViewControllerForPhoneWithModel: (AGTWineryModel *)aModel {
+    
+    AGTWineryTableViewController *wineryVC = [[AGTWineryTableViewController alloc] initWithModel:aModel style:UITableViewStylePlain];
+    
+    UINavigationController *wineryNav = [[UINavigationController alloc] initWithRootViewController:wineryVC];
+  
+
+    wineryVC.delegate = wineryVC;
+    
+    
+    return wineryNav;
+    
+}
+
+- (UIViewController *)rootViewControllerForPadWithModel: (AGTWineryModel *)aModel {
+    
+    AGTWineryTableViewController *wineryVC = [[AGTWineryTableViewController alloc] initWithModel:aModel style:UITableViewStylePlain];
+
+    AGTWineViewController *wineVC = [[AGTWineViewController alloc] initWithModel:[wineryVC lastSelectedWine]];
+    
+    UINavigationController *wineryNav = [[UINavigationController alloc] initWithRootViewController:wineryVC];
+
+    UINavigationController *wineNav = [[UINavigationController alloc] initWithRootViewController:wineVC];
+
+    UISplitViewController *splitVC = [[UISplitViewController alloc] init];
+    splitVC.viewControllers = @[wineryNav, wineNav];
+
+    //Asignamos delegado
+    splitVC.delegate = wineVC;
+    wineryVC.delegate = wineVC;
+    
+    
+    return splitVC;
+
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor blueColor];
+  /*
+    AGTWineModel *tintorro = [AGTWineModel wineWithName:@"Bembibre"
+                                        wineCompanyName:@"Dominio de Tares"
+                                                   type:@"tinto"
+                                                 origin:@"El Bierzo"
+                                                 grapes:@[@"Mencía"]
+                                         wineCompanyWeb:[NSURL URLWithString:@"http://www.dominiodetares.com/index.php/es/vinos/baltos/74-bembibrevinos"]
+                                                  notes:@"Este vino muestra toda la complejidad y la elegancia de la variedad Mencía. En fase visual luce un color rojo picota muy cubierto con tonalidades violáceas en el menisco. En nariz aparecen recuerdos frutales muy intensos de frutas rojas (frambuesa, cereza) y una potente ciruela negra, así como tonos florales de la gama de las rosas y violetas, vegetales muy elegantes y complementarios, hojarasca verde, tabaco y maderas aromáticas (sándalo) que le brindan un toque ciertamente perfumado."
+                                                 rating:5
+                                                  photo:[UIImage imageNamed:@"bembibre.jpg"]];
+   */
+    //Controladores
+    //AGTWineViewController *wineVC = [[AGTWineViewController alloc] initWithModel:tintorro];
+    
+    //AGTWebViewController *webVC = [[AGTWebViewController alloc] initWithModel:tintorro];
+    
+    /*
+    //Combinador uitabbar
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    tabVC.viewControllers = @[wineVC, webVC];
+    */
+    
+    
+    
+    
+    //Combinador uinavigationcontroller
+    //UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:wineVC];
+    
+    
+    //self.window.rootViewController = wineVC;
+    
+  /*
+    //NEW
+    AGTWineryModel *winery = [[AGTWineryModel alloc] init];
+    
+    AGTWineryTableViewController *wineryVC = [[AGTWineryTableViewController alloc] initWithModel:winery style:UITableViewStylePlain];
+    //2
+    AGTWineViewController *wineVC = [[AGTWineViewController alloc] initWithModel:[winery redWineAtIndex:0]];
+    
+    UINavigationController *wineryNav = [[UINavigationController alloc] initWithRootViewController:wineryVC];
+    //2
+    UINavigationController *wineNav = [[UINavigationController alloc] initWithRootViewController:wineVC];
+    
+    //2
+    UISplitViewController *splitVC = [[UISplitViewController alloc] init];
+    splitVC.viewControllers = @[wineryNav, wineNav];
+    
+    //2
+    //Asignamos delegado
+    splitVC.delegate = wineVC;
+    wineryVC.delegate = wineVC;
+    
+    
+    self.window.rootViewController = splitVC;
+    */
+    
+    //Universal changes
+    AGTWineryModel *model = [[AGTWineryModel alloc] init];
+    
+    UIViewController *rootVC = nil;
+    if(!IS_IPHONE){
+        rootVC = [self rootViewControllerForPadWithModel:model];
+    } else {
+        rootVC = [self rootViewControllerForPhoneWithModel:model];
+    }
+    
+    
+    //self.window.backgroundColor = [UIColor blueColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [UIViewController new];
+    //self.window.rootViewController = [UIViewController new];
     return YES;
 }
 

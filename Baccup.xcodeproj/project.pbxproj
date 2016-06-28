@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C05434EE1C7E41D20059770D /* AGTWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05434EC1C7E41D20059770D /* AGTWebViewController.m */; };
+		C05434EF1C7E41D20059770D /* AGTWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05434ED1C7E41D20059770D /* AGTWebViewController.xib */; };
+		C067DC1C1C821D7E00B46847 /* comtesDeChampagne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C067DC1B1C821D7E00B46847 /* comtesDeChampagne.jpg */; };
+		C067DC1E1C821D9100B46847 /* zarate.gif in Resources */ = {isa = PBXBuildFile; fileRef = C067DC1D1C821D9100B46847 /* zarate.gif */; };
 		C07271281C792BE600C1A8E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C07271271C792BE600C1A8E6 /* main.m */; };
 		C072712B1C792BE600C1A8E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C072712A1C792BE600C1A8E6 /* AppDelegate.m */; };
 		C072712D1C792BE600C1A8E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C072712C1C792BE600C1A8E6 /* Assets.xcassets */; };
 		C07271301C792BE600C1A8E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C072712E1C792BE600C1A8E6 /* LaunchScreen.storyboard */; };
 		C07271381C7935FC00C1A8E6 /* AGTWineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C07271371C7935FC00C1A8E6 /* AGTWineModel.m */; };
+		C0DD10B71C7D0B3300B13229 /* AGTWineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0DD10B51C7D0B3300B13229 /* AGTWineViewController.m */; };
+		C0DD10B81C7D0B3300B13229 /* AGTWineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DD10B61C7D0B3300B13229 /* AGTWineViewController.xib */; };
+		C0DD10BB1C7D266B00B13229 /* splitView_score_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0DD10BA1C7D266B00B13229 /* splitView_score_glass@2x.png */; };
+		C0DD10BE1C7D270D00B13229 /* bembibre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0DD10BD1C7D270D00B13229 /* bembibre.jpg */; };
+		C0F919471C80EEF200ECA100 /* AGTWineryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F919461C80EEF200ECA100 /* AGTWineryModel.m */; };
+		C0F9194A1C81059200ECA100 /* AGTWineryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F919491C81059200ECA100 /* AGTWineryTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C05434EB1C7E41D20059770D /* AGTWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWebViewController.h; sourceTree = "<group>"; };
+		C05434EC1C7E41D20059770D /* AGTWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWebViewController.m; sourceTree = "<group>"; };
+		C05434ED1C7E41D20059770D /* AGTWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTWebViewController.xib; sourceTree = "<group>"; };
+		C067DC1B1C821D7E00B46847 /* comtesDeChampagne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = comtesDeChampagne.jpg; sourceTree = "<group>"; };
+		C067DC1D1C821D9100B46847 /* zarate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = zarate.gif; sourceTree = "<group>"; };
 		C07271231C792BE600C1A8E6 /* Baccup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Baccup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07271271C792BE600C1A8E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C07271291C792BE600C1A8E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -24,6 +39,15 @@
 		C07271311C792BE600C1A8E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07271371C7935FC00C1A8E6 /* AGTWineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWineModel.m; sourceTree = "<group>"; };
 		C07271391C79364500C1A8E6 /* AGTWineModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGTWineModel.h; sourceTree = "<group>"; };
+		C0DD10B41C7D0B3300B13229 /* AGTWineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWineViewController.h; sourceTree = "<group>"; };
+		C0DD10B51C7D0B3300B13229 /* AGTWineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWineViewController.m; sourceTree = "<group>"; };
+		C0DD10B61C7D0B3300B13229 /* AGTWineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGTWineViewController.xib; sourceTree = "<group>"; };
+		C0DD10BA1C7D266B00B13229 /* splitView_score_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "splitView_score_glass@2x.png"; path = "../splitView_score_glass@2x.png"; sourceTree = "<group>"; };
+		C0DD10BD1C7D270D00B13229 /* bembibre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bembibre.jpg; sourceTree = "<group>"; };
+		C0F919451C80EEF200ECA100 /* AGTWineryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWineryModel.h; sourceTree = "<group>"; };
+		C0F919461C80EEF200ECA100 /* AGTWineryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWineryModel.m; sourceTree = "<group>"; };
+		C0F919481C81059200ECA100 /* AGTWineryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGTWineryTableViewController.h; sourceTree = "<group>"; };
+		C0F919491C81059200ECA100 /* AGTWineryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGTWineryTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,8 @@
 		C07271251C792BE600C1A8E6 /* Baccup */ = {
 			isa = PBXGroup;
 			children = (
+				C0DD10BC1C7D268200B13229 /* Resources */,
+				C0DD10B91C7D0B5A00B13229 /* Controllers */,
 				C07271291C792BE600C1A8E6 /* AppDelegate.h */,
 				C072712A1C792BE600C1A8E6 /* AppDelegate.m */,
 				C072713A1C79367800C1A8E6 /* Models */,
@@ -78,10 +104,39 @@
 		C072713A1C79367800C1A8E6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C0F919451C80EEF200ECA100 /* AGTWineryModel.h */,
+				C0F919461C80EEF200ECA100 /* AGTWineryModel.m */,
 				C07271371C7935FC00C1A8E6 /* AGTWineModel.m */,
 				C07271391C79364500C1A8E6 /* AGTWineModel.h */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		C0DD10B91C7D0B5A00B13229 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0F919481C81059200ECA100 /* AGTWineryTableViewController.h */,
+				C0F919491C81059200ECA100 /* AGTWineryTableViewController.m */,
+				C05434EB1C7E41D20059770D /* AGTWebViewController.h */,
+				C05434EC1C7E41D20059770D /* AGTWebViewController.m */,
+				C05434ED1C7E41D20059770D /* AGTWebViewController.xib */,
+				C0DD10B41C7D0B3300B13229 /* AGTWineViewController.h */,
+				C0DD10B51C7D0B3300B13229 /* AGTWineViewController.m */,
+				C0DD10B61C7D0B3300B13229 /* AGTWineViewController.xib */,
+			);
+			name = Controllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C0DD10BC1C7D268200B13229 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C067DC1B1C821D7E00B46847 /* comtesDeChampagne.jpg */,
+				C067DC1D1C821D9100B46847 /* zarate.gif */,
+				C0DD10BD1C7D270D00B13229 /* bembibre.jpg */,
+				C0DD10BA1C7D266B00B13229 /* splitView_score_glass@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +196,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DD10BB1C7D266B00B13229 /* splitView_score_glass@2x.png in Resources */,
+				C067DC1C1C821D7E00B46847 /* comtesDeChampagne.jpg in Resources */,
+				C0DD10B81C7D0B3300B13229 /* AGTWineViewController.xib in Resources */,
+				C05434EF1C7E41D20059770D /* AGTWebViewController.xib in Resources */,
 				C072712D1C792BE600C1A8E6 /* Assets.xcassets in Resources */,
+				C067DC1E1C821D9100B46847 /* zarate.gif in Resources */,
+				C0DD10BE1C7D270D00B13229 /* bembibre.jpg in Resources */,
 				C07271301C792BE600C1A8E6 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,8 +214,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DD10B71C7D0B3300B13229 /* AGTWineViewController.m in Sources */,
 				C072712B1C792BE600C1A8E6 /* AppDelegate.m in Sources */,
+				C05434EE1C7E41D20059770D /* AGTWebViewController.m in Sources */,
 				C07271381C7935FC00C1A8E6 /* AGTWineModel.m in Sources */,
+				C0F919471C80EEF200ECA100 /* AGTWineryModel.m in Sources */,
+				C0F9194A1C81059200ECA100 /* AGTWineryTableViewController.m in Sources */,
 				C07271281C792BE600C1A8E6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +328,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keepcodingalumni.Baccup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -274,6 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.keepcodingalumni.Baccup;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -296,6 +363,7 @@
 				C07271361C792BE600C1A8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
